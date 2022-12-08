@@ -1,0 +1,3 @@
+.root { -fx-focus-color: transparent; }
+
+HBox, .button {-fx-background-color: #3f51b5}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hamilton.teacherscheduler.controller.MainController">
+   <children>
+      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="200.0" stylesheets="@header.css" VBox.vgrow="NEVER">
+         <children>
+            <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/hamiltonLogo.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="506.0" style="-fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold;" text="Teacher Scheduler" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+            <Button alignment="CENTER" maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="55.0" prefWidth="65.0">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/account.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="60.0" stylesheets="@dock.css">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Home">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/home.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Schedule">
+                     <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/calendar.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Specials">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/specials.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Teachers">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/teacher.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Settings">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/settings.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <StackPane prefHeight="150.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
