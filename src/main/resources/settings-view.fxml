@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="66.0" text="Settings" />
+         </children></HBox>
+      <TableView prefHeight="309.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="139.66667687892914" text="Class" />
+          <TableColumn prefWidth="67.0" text="K" />
+            <TableColumn prefWidth="75.66664123535156" text="1st" />
+            <TableColumn prefWidth="78.33334350585938" text="2nd" />
+            <TableColumn prefWidth="78.6666259765625" text="3rd" />
+            <TableColumn prefWidth="75.66671752929688" text="4th" />
+            <TableColumn prefWidth="85.66671752929688" text="5th" />
+        </columns>
+      </TableView>
+      <HBox prefHeight="62.0" prefWidth="358.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="82.0" prefWidth="145.0" snapToPixel="false" text="Total Minutes Per Day" />
+            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <Label alignment="CENTER" prefHeight="57.0" prefWidth="80.0" />
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="83.0">
+               <graphic>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="75.0" />
+               </graphic></Label>
+            <Label alignment="CENTER" prefHeight="61.0" prefWidth="73.0" />
+            <Label alignment="CENTER" prefHeight="55.0" prefWidth="80.0" textAlignment="CENTER" />
+         </children></HBox>
+      <Label alignment="CENTER" prefHeight="63.0" prefWidth="61.0" />
+   </children>
+</VBox>

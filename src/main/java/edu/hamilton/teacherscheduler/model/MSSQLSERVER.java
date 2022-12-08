@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class MSSQLSERVER {
     static void connect() throws FileNotFoundException, SQLException {
         File connectionDetails = new File("src/main/java/edu/hamilton/teacherscheduler/model/connectionDetails.txt");
-        System.out.println(connectionDetails);
         Scanner scanner = new Scanner(connectionDetails);
         final String connectionURL =
                 String.format("jdbc:sqlserver://%s;" +
