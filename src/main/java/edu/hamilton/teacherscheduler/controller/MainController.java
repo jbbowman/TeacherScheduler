@@ -1,22 +1,34 @@
 package edu.hamilton.teacherscheduler.controller;
 
-import javafx.event.ActionEvent;
+import edu.hamilton.teacherscheduler.Main;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.*;
-import javafx.scene.*;
+import javafx.event.ActionEvent;
+import javafx.scene.layout.Pane;
+
 
 import java.io.IOException;
 
 public class MainController {
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
+    @FXML
+    private Pane rootPane;
+    @FXML
+    public void initialize() throws IOException {
+        rootPane.getChildren().add(new FXMLLoader(Main.class.getResource("settings-view.fxml")).load());
+    }
 
-    public void switchToSettings(ActionEvent event) throws IOException {
-            Parent root = FXMLLoader.load(getClass().getResource("../../../../../resources/edu/hamilton/teacherscheduler/settings-view.fxml"));
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+    @FXML
+    private void handleHomeB(ActionEvent event) {changeIndex(0);}
+    @FXML
+    private void handleScheduleB(ActionEvent event) {changeIndex(1);}
+    @FXML
+    private void handleSpecialsB(ActionEvent event) {changeIndex(2);}
+    @FXML
+    private void handleTeachersB(ActionEvent event) {changeIndex(3);}
+    @FXML
+    private void handleSettingsB(ActionEvent event) {changeIndex(4);}
+
+    private void changeIndex(int index) {
+        this.rootPane.getChildren().get(index).toFront();
     }
 }
