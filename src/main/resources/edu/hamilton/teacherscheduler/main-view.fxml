@@ -5,6 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -33,7 +34,7 @@
          <children>
             <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="60.0" stylesheets="@dock.css">
                <children>
-                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Home">
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleHomeB" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Home">
                      <graphic>
                         <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -42,7 +43,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Schedule">
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleScheduleB" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Schedule">
                      <graphic>
                         <ImageView fitHeight="57.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -51,7 +52,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Specials">
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSpecialsB" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Specials">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -60,7 +61,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Teachers">
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleTeachersB" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Teachers">
                      <graphic>
                         <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -69,7 +70,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Settings">
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSettingsB" prefHeight="50.0" style="-fx-text-fill: white; -fx-font-size: 10;" text="Settings">
                      <graphic>
                         <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -80,7 +81,18 @@
                   </Button>
                </children>
             </VBox>
-            <StackPane prefHeight="150.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Pane fx:id="rootPane" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <StackPane>
+                     <children>
+                        <Pane />
+                        <Pane />
+                        <Pane />
+                        <Pane />
+                        <Pane />
+                     </children>
+                  </StackPane>
+               </children></Pane>
          </children>
       </HBox>
    </children>
