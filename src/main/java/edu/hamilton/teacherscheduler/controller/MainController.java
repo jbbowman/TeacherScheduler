@@ -15,9 +15,7 @@ public class MainController {
     private Pane rootPane;
     String[] fileNames = {"schedule-view.fxml", "settings-view.fxml"};
     @FXML
-    public void initialize() {
-        changeIndex(fileNames, 0);
-    }
+    public void initialize() {changeIndex(fileNames, 0);}
     @FXML
     private void handleHomeB(ActionEvent event) {changeIndex(fileNames, 0);}
     @FXML
