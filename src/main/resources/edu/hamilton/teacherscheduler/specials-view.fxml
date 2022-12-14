@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="specialsTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hamilton.teacherscheduler.controller.MainController">
+  <columns>
+    <TableColumn fx:id="kinderClass" prefWidth="100.0" text="K" />
+    <TableColumn fx:id="firstClass" prefWidth="100.0" text="1st" />
+      <TableColumn fx:id="secondClass" prefWidth="100.0" text="2nd" />
+      <TableColumn fx:id="thirdClass" prefWidth="100.0" text="3rd" />
+      <TableColumn fx:id="fourthClass" prefWidth="100.0" text="4th" />
+      <TableColumn fx:id="fifthClass" prefWidth="100.0" text="5th" />
+  </columns>
+</TableView>
