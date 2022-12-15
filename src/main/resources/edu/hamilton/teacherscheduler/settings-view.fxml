@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox prefHeight="45.0" prefWidth="600.0">
+      <HBox prefHeight="58.0" prefWidth="600.0">
          <children>
-            <Label alignment="CENTER" prefHeight="40.0" prefWidth="66.0" text="Settings" />
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="225.0" text="Settings" />
          </children></HBox>
-      <TableView prefHeight="309.0" prefWidth="600.0">
+      <TableView prefHeight="324.0" prefWidth="600.0">
         <columns>
           <TableColumn prefWidth="139.66667687892914" text="Class" />
           <TableColumn prefWidth="67.0" text="K" />
