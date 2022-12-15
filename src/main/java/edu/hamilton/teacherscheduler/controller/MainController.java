@@ -13,7 +13,7 @@ import java.util.List;
 public class MainController {
     @FXML
     private Pane rootPane;
-    String[] fileNames = {"schedule-view.fxml", "settings-view.fxml"};
+    String[] fileNames = {"home-view.fxml", "schedule-view.fxml", "specials-view.fxml", "teacher-view.fxml", "settings-view.fxml"};
     @FXML
     public void initialize() {changeIndex(fileNames, 0);}
     @FXML
