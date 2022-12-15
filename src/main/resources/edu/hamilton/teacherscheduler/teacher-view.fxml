@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hamilton.teacherscheduler.controller.TeacherController">
    <children>
-      <HBox prefHeight="45.0" prefWidth="600.0">
+      <HBox prefHeight="58.0" prefWidth="600.0">
          <children>
-            <Label alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="Teacher Schedule" />
-         </children>
-      </HBox>
-      <TableView prefHeight="309.0" prefWidth="600.0">
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="225.0" text="Teachers" />
+         </children></HBox>
+      <TableView fx:id="tableView" prefHeight="324.0" prefWidth="600.0">
          <columns>
-            <TableColumn prefWidth="139.66667687892914" text="Class" />
-            <TableColumn prefWidth="67.0" text="K" />
-            <TableColumn prefWidth="75.66664123535156" text="1st" />
-            <TableColumn prefWidth="78.33334350585938" text="2nd" />
-            <TableColumn prefWidth="78.6666259765625" text="3rd" />
-            <TableColumn prefWidth="75.66671752929688" text="4th" />
-            <TableColumn prefWidth="85.66671752929688" text="5th" />
+            <TableColumn fx:id="fName" prefWidth="139.66667687892914" text="First Name" />
+            <TableColumn fx:id="lName" prefWidth="67.0" text="Last Name" />
+            <TableColumn fx:id="phone" prefWidth="75.66664123535156" text="Phone Number" />
+            <TableColumn fx:id="hoursAvailable" prefWidth="78.33334350585938" text="Hours Available" />
          </columns>
       </TableView>
       <HBox prefHeight="62.0" prefWidth="358.0">
          <children>
-            <Label alignment="TOP_CENTER" prefHeight="82.0" prefWidth="145.0" snapToPixel="false" text="Select Teacher" />
-            <ChoiceBox prefWidth="150.0" />
-         </children>
-      </HBox>
+            <Button onAction="#create" text="Create" />
+            <Button onAction="#edit" text="Edit" />
+            <Button onAction="#delete" text="Delete" />
+         </children></HBox>
+      <Label alignment="CENTER" prefHeight="63.0" prefWidth="61.0" />
    </children>
 </VBox>
