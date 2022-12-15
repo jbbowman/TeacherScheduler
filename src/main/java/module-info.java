@@ -4,6 +4,7 @@ module edu.hamilton.teacherscheduler {
     requires com.microsoft.sqlserver.jdbc;
     requires java.sql;
 
+    opens edu.hamilton.teacherscheduler.model to javafx.base;
     opens edu.hamilton.teacherscheduler to javafx.fxml;
     exports edu.hamilton.teacherscheduler;
     exports edu.hamilton.teacherscheduler.controller;
