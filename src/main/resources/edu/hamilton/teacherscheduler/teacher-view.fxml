@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.DropdownButton?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="671.0">
+      <HBox prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="Teacher Schedule" />
+         </children>
+      </HBox>
+      <TableView prefHeight="309.0" prefWidth="600.0">
          <columns>
-            <TableColumn editable="false" prefWidth="75.0" text="Time" />
-            <TableColumn editable="false" prefWidth="116.66665649414062" text="          Monday" />
-            <TableColumn editable="false" prefWidth="111.33331298828125" text="          Tuesday" />
-            <TableColumn editable="false" prefWidth="126.0" text="         Wednesday" />
-            <TableColumn editable="false" prefWidth="123.3333740234375" text="           Thursday" />
-            <TableColumn editable="false" prefWidth="116.66664632161462" text="             Friday" />
+            <TableColumn prefWidth="139.66667687892914" text="Class" />
+            <TableColumn prefWidth="67.0" text="K" />
+            <TableColumn prefWidth="75.66664123535156" text="1st" />
+            <TableColumn prefWidth="78.33334350585938" text="2nd" />
+            <TableColumn prefWidth="78.6666259765625" text="3rd" />
+            <TableColumn prefWidth="75.66671752929688" text="4th" />
+            <TableColumn prefWidth="85.66671752929688" text="5th" />
          </columns>
       </TableView>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="62.0" prefWidth="358.0">
          <children>
-            <Label text="Select Teacher" />
-            <DropdownButton>
-                <items>
-                    <MenuItem />
-                    <MenuItem />
-                    <MenuItem />
-                </items>
-            </DropdownButton>
+            <Label alignment="TOP_CENTER" prefHeight="82.0" prefWidth="145.0" snapToPixel="false" text="Select Teacher" />
+            <ChoiceBox prefWidth="150.0" />
          </children>
       </HBox>
    </children>
