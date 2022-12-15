@@ -8,16 +8,16 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hamilton.teacherscheduler.controller.MainController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="671.0">
          <columns>
-            <TableColumn fx:id="timeSlot" editable="false" prefWidth="75.0" text="Time" />
-            <TableColumn fx:id="mondaySchedule" editable="false" prefWidth="116.66665649414062" text="          Monday" />
-            <TableColumn fx:id="tuesdaySchedule" editable="false" prefWidth="111.33331298828125" text="          Tuesday" />
-            <TableColumn fx:id="wednesdaySchedule" editable="false" prefWidth="126.0" text="         Wednesday" />
-            <TableColumn fx:id="thursdaySchedule" editable="false" prefWidth="123.3333740234375" text="           Thursday" />
-            <TableColumn fx:id="frisdaySchedule" editable="false" prefWidth="116.66664632161462" text="             Friday" />
+            <TableColumn editable="false" prefWidth="75.0" text="Time" />
+            <TableColumn editable="false" prefWidth="116.66665649414062" text="          Monday" />
+            <TableColumn editable="false" prefWidth="111.33331298828125" text="          Tuesday" />
+            <TableColumn editable="false" prefWidth="126.0" text="         Wednesday" />
+            <TableColumn editable="false" prefWidth="123.3333740234375" text="           Thursday" />
+            <TableColumn editable="false" prefWidth="116.66664632161462" text="             Friday" />
          </columns>
       </TableView>
       <HBox prefHeight="100.0" prefWidth="200.0">
