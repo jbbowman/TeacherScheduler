@@ -40,7 +40,7 @@ public class MainController {
 
         for (String fileName : fileNames) {
             File file = new File("src/main/resources/edu/hamilton/teacherscheduler/" + fileName);
-            pages.add(new FXMLLoader(file.toURL()).load());
+            pages.add(new FXMLLoader(file.toURI().toURL()).load());
         }
         return pages;
     }
